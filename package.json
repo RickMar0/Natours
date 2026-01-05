@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "tours in nature website demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickMar0/Natours.git"
+  },
+  "author": "Riccardo Marogna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickMar0/Natours/issues"
+  },
+  "homepage": "https://github.com/RickMar0/Natours#readme",
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}
