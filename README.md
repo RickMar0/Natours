@@ -1,2 +1,2 @@
 Natours website demo.
-walks in nature and stuff
+Tours out in the nature.
