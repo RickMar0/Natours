@@ -1,14 +1,19 @@
 // require modules
-const express = require("express");
-const morgan = require("morgan");
-const app = express();
+const express = require("express"); // express framework
+const morgan = require("morgan"); // middleware logger
 const tourRouter = require("./routes/tourRoutes");
 const userRouter = require("./routes/userRoutes");
 
+const app = express();
+console.log(process.env.NODE_ENV);
+
 // 1) MIDDLEWARE
-app.use(morgan("dev")); //req,res logging
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+} // activate morgan logger only in development mode
 
 app.use(express.json()); //json body parser
+app.use(express.static(`${__dirname}/public`)); //serving static files
 
 app.use((req, res, next) => {
   console.log("hello from the middleware 👋");
