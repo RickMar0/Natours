@@ -4,8 +4,11 @@
   "description": "tours in nature website demo",
   "main": "app.js",
   "scripts": {
-    "startdev": "SET NODE_ENV=development&&nodemon server.js",
-    "startprod": "SET NODE_ENV=production&&nodemon server.js"
+    "dev": "SET NODE_ENV=development&&nodemon server.js",
+    "prod": "SET NODE_ENV=production&&nodemon server.js",
+    "mongod": "mongod.exe",
+    "mongos": "mongosh mongodb://localhost:27017/natours-test",
+    "atlas": "mongosh \"mongodb+srv://natours.7jfwlcr.mongodb.net/\" --apiVersion 1 --username dj95maro --password a3f9c1e7b4d8a2c6f0e1b5d9c3a7e2"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "@ljharb/tsconfig": "^0.3.2",
     "dotenv": "^17.2.3",
     "express": "^4.22.1",
+    "mongoose": "^5.13.23",
     "morgan": "^1.10.1"
   }
 }
