@@ -14,6 +14,7 @@ mongoose
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
+    useUnifiedTopology: true,
   })
   .then(() => {
     console.log("DB connection successful!");
@@ -26,3 +27,5 @@ app.listen(port, () => {
 });
 
 // http://192.168.1.100:3000
+
+//TEST
